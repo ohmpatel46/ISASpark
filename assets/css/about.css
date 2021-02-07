@@ -33,7 +33,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
+  .aboutus-wrapper {
+    margin-top: 100px;
   }
 }
 

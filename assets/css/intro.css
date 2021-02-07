@@ -16,7 +16,7 @@
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -81,7 +81,7 @@
   color: #55bef6;
 }
 
-@media (min-width: 350px) and (max-width: 400px) {
+/* @media (min-width: 350px) and (max-width: 400px) {
   .intro {
     font-size: 8vw;
   }
@@ -91,6 +91,50 @@
   }
 }
 @media (min-width: 400px) and (max-width: 450px) {
+} */
+
+@media (max-width: 600px) {
+  .intro-wrapper{
+    width:100wv;
+    padding-left: 7vw;
+    padding-right:7vw;
+  }
+  .ihack-behind{
+    margin-left: 4vw;
+  }
+  .ihack-behind span{
+    font-size: 6rem;
+  }
+  .ihack-front h1{
+    font-size: 6rem;
+  }
+  .year{
+    font-size:6rem;
+    margin-left:9vw;
+    margin-bottom: -10px;
+  }
+  .dates{
+    font-size: 1.75rem;
+    margin-left:1vw;
+    margin-bottom: 40px;
+  }
+  .intro {
+    font-size: 1.7rem;
+  }
+  .intro-content h3 {
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight:100;
+  }
+  .intro-content button{
+    margin-left:11vw;
+  }
+  .message{
+    margin-bottom:30px;
+  }
+
+  
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
