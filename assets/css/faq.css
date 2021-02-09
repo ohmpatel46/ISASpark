@@ -92,7 +92,12 @@
     margin-top: 10px;
   }
 }  */
-
+.accordion-button,.accordion-body{
+  color:white ;
+}
+.accordion-header{
+  border-bottom: 5px solid white;
+}
 @media (max-width: 600px) {
   .faq-content
   {

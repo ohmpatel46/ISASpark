@@ -1,3 +1,16 @@
+.speaker-back{
+    width: 70vw;
+    height: 70vw;
+}
+.speaker-image{
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    top:-29vh;
+    left:18vw;
+}
+
 @media (max-width: 600px) {
     .speakers-content{
         margin-bottom:50px;
