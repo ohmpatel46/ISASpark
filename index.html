@@ -19,7 +19,11 @@
     />
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/intro.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/faq.css" /> -->
+    <link rel="stylesheet" href="./assets/css/timeline.css" />
+    <link rel="stylesheet" href="./assets/css/speakers.css" />
+    <link rel="stylesheet" href="./assets/css/faq.css" />
+    <link rel="stylesheet" href="./assets/css/contacttus.css" />
+    <link rel="stylesheet" href="./assets/css/sponsors.css" />
 
     <title>iHack</title>
     <style></style>
@@ -89,7 +93,7 @@
     <!--==================
         About Us starts here
         ==================-->
-    <div class="container aboutus-wrapper">
+    <div class="container aboutus-wrapper wrapper">
       <div class="row">
         <div class="col-lg-6">
           <div class="banner-behind">
@@ -116,7 +120,7 @@
     <!--==================
         Timeline starts here
         ==================-->
-    <div class="container">
+    <div class="container timeline-wrapper wrapper">
       <div class="row">
         <div class="col">
           <div class="banner-behind">
@@ -124,7 +128,10 @@
               <h1>Timeline</h1>
             </div>
           </div>
-          <p>Put the train thing here.</p>
+          <div class="timeline-content">
+            <p>Put the train thing here.</p>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -135,7 +142,7 @@
     <!--==================
         Speakers starts here
         ==================-->
-    <div class="container">
+    <div class="container speakers-wrapper wrapper">
       <div class="row">
         <div class="col">
           <div class="banner-behind">
@@ -143,16 +150,18 @@
               <h1>Speakers</h1>
             </div>
           </div>
-          <div class="speakers">
-            <img src="http://" />
-            <h3>Richard Harris</h3>
-            <p>Senior</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              ante ligula, lacinia quis varius sed, maximus vitae lectus. Ut
-              quis malesuada nunc. Integer quis lectus sed ante viverra
-              molestie.
-            </p>
+          <div class="speakers-content">
+            <div class="speaker">
+              <img src="http://" />
+              <h3>Richard Harris</h3>
+              <p>Senior</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                ante ligula, lacinia quis varius sed, maximus vitae lectus. Ut
+                quis malesuada nunc. Integer quis lectus sed ante viverra
+                molestie.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -164,27 +173,62 @@
     <!--==================
         FAQ starts here
         ==================-->
-    <!-- <div class="container">
+    <div class="container faq-wrapper wrapper">
       <div class="row">
-        <div class="col"></div>
+        <div class="col">
+          <div class="banner-behind">
+            <div class="banner-front">
+              <h1>FAQ</h1>
+            </div>
+          </div>
+          <div class="faq-content"></div>
+        </div>
       </div>
-    </div> -->
+    </div>
 
     <!--==================
         FAQ ends here
         ==================-->
 
     <!--==================
+        Sponsors starts here
+        ==================-->
+        <div class="container sponsors-wrapper wrapper">
+          <div class="row">
+            <div class="col">
+              <div class="banner-behind">
+                <div class="banner-front">
+                  <h1>Sponsors</h1>
+                </div>
+              </div>
+              <div class="sponsors-content"></div>
+            </div>
+          </div>
+        </div>
+      <!--==================
+         Sponsors ends here
+       ==================-->
+
+    <!--==================
         Contact Us starts here
         ==================-->
-    <div class="container">
+    <div class="container contactus-wrapper wrapper">
       <div class="row">
-        <div class="col"></div>
+        <div class="col">
+          <div class="banner-behind">
+            <div class="banner-front">
+              <h1>Contact Us</h1>
+            </div>
+          </div>
+          <div class="contactus-content"></div>
+        </div>
       </div>
     </div>
     <!--==================
         Contact Us ends here
         ==================-->
+
+    
 
     <!--======================================================
         jQuery first, then Popper.js, then Bootstrap JS

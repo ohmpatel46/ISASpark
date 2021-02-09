@@ -1,4 +1,4 @@
-.faq-heading h2 {
+/* .faq-heading h2 {
   margin: 60px;
   display: inline;
   font-weight: 600;
@@ -53,7 +53,7 @@
   overflow: hidden;
   position: relative;
   /* transition: max-height 600ms; */
-}
+/* }
 
 .faq .card .card-body::before {
   content: "";
@@ -83,7 +83,7 @@
   display: block;
 }
 
-/*@media (max-width: 991px) {
+@media (max-width: 991px) {
   .faq {
     margin-bottom: 30px;
   }
@@ -91,9 +91,14 @@
     line-height: 26px;
     margin-top: 10px;
   }
-}*/
+}  */
 
 @media (max-width: 600px) {
+  .faq-content
+  {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
