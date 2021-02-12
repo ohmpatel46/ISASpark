@@ -12,6 +12,7 @@
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/intro.css" />
     <link rel="stylesheet" href="./assets/css/timeline.css" />
@@ -28,6 +29,43 @@
     <!--==================
         Navbar starts here
         ==================-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./assets/images/Spark_LOGO.svg"/></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutus">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Prizes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#timeline">Timeline</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#speakers">Speakers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactus">Contact</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
     <!--==================
         Navbar ends here
         ==================-->
@@ -35,19 +73,19 @@
     <!--==================
         Intro starts here
         ==================-->
-    <div class="container intro-wrapper">
+    <div class="container-fluid intro-wrapper">
       <div class="row d-flex flex-row-reverse">
         <div class="col ihack">
-          <div class="ihack-behind">
+          <div class="ihack-behind d-flex justify-content-end">
             <span>iHACK</span>
             <div class="ihack-front">
               <h1>iHACK</h1>
             </div>
           </div>
-          <div class="year">
+          <div class="year d-flex justify-content-end">
             <h1>2021</h1>
           </div>
-          <div class="dates">
+          <div class="dates d-flex justify-content-end">
             <p>1st - 3rd <span>March, 2021</span></p>
           </div>
         </div>
@@ -88,10 +126,10 @@
     <!--==================
         About Us starts here
         ==================-->
-    <div class="container aboutus-wrapper wrapper">
+    <div class="container-fluid aboutus-wrapper wrapper">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="banner-behind">
+        <div class="col">
+          <div class="banner-behind" id="#aboutus">
             <div class="banner-front">
               <h1>About Us</h1>
             </div>
@@ -115,10 +153,10 @@
     <!--==================
         Timeline starts here
         ==================-->
-    <div class="container timeline-wrapper wrapper">
+    <div class="container-fluid timeline-wrapper wrapper">
       <div class="row">
         <div class="col">
-          <div class="banner-behind">
+          <div class="banner-behind" id="timeline">
             <div class="banner-front">
               <h1>Timeline</h1>
             </div>
@@ -137,10 +175,10 @@
     <!--==================
         Speakers starts here
         ==================-->
-    <div class="container speakers-wrapper wrapper">
+    <div class="container-fluid speakers-wrapper wrapper">
       <div class="row">
         <div class="col">
-          <div class="banner-behind">
+          <div class="banner-behind" id="speakers">
             <div class="banner-front">
               <h1>Speakers</h1>
             </div>
@@ -190,10 +228,10 @@
     <!--==================
         FAQ starts here
         ==================-->
-    <div class="container faq-wrapper wrapper">
+    <div class="container-fluid faq-wrapper wrapper">
       <div class="row">
         <div class="col">
-          <div class="banner-behind">
+          <div class="banner-behind" id="faq">
             <div class="banner-front">
               <h1>FAQ</h1>
             </div>
@@ -243,10 +281,10 @@
     <!--==================
         Sponsors starts here
         ==================-->
-        <div class="container sponsors-wrapper wrapper">
+        <div class="container-fluid sponsors-wrapper wrapper">
           <div class="row">
             <div class="col">
-              <div class="banner-behind">
+              <div class="banner-behind" id="sponsors">
                 <div class="banner-front">
                   <h1>Sponsors</h1>
                 </div>
@@ -262,10 +300,10 @@
     <!--==================
         Contact Us starts here
         ==================-->
-    <div class="container contactus-wrapper wrapper">
+    <div class="container-fluid contactus-wrapper wrapper">
       <div class="row">
         <div class="col">
-          <div class="banner-behind">
+          <div class="banner-behind" id="contactus">
             <div class="banner-front">
               <h1>Contact Us</h1>
             </div>
@@ -293,5 +331,37 @@
 
 
     <script src="./assets/js/devfolio.js"></script>
+
+    <!-- <script>
+      if($(window).width()<600){
+        $(".ihack-behind").removeClass("justify-content-end");
+        $(".year").removeClass("justify-content-end");
+        $(".dates").removeClass("justify-content-end");
+        $(".ihack-behind").addClass("justify-content-center");
+        $(".year").addClass("justify-content-center");
+        $(".dates").addClass("justify-content-center");
+      }
+    </script> -->
+    <script>
+      
+      $(window).ready(function(){
+        adjustalign();
+      });
+      $( window ).resize(function() {
+        adjustalign();
+      });
+
+      function adjustalign(){
+        if($(window).width()<600){
+        $(".ihack-behind").removeClass("justify-content-end");
+        $(".ihack-behind").addClass("justify-content-center");
+        $(".year").removeClass("justify-content-end");
+        $(".year").addClass("justify-content-center");
+        $(".dates").removeClass("justify-content-end");
+        $(".dates").addClass("justify-content-center");
+        }
+      }
+      
+    </script>
   </body>
 </html>

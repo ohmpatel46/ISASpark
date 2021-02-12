@@ -27,9 +27,6 @@
   background-color: #2954bf !important;
 }
 
-.intro-wrapper .col {
-  float: left;
-}
 
 .intro {
   color: #55bef6;
@@ -40,7 +37,7 @@
 }
 
 .ihack-front h1 {
-  font-size: 7rem;
+  font-size: 9rem;
   font-weight: 700;
   color: #55bef6;
   z-index: 10;
@@ -50,7 +47,7 @@
 }
 
 .ihack-behind span {
-  font-size: 7rem;
+  font-size: 9rem;
   font-weight: 700;
   color: #01213c;
   text-shadow: -2px 2px 0 #ffffff, 2px 2px 0 #ffffff, 2px -2px 0 #ffffff,
@@ -60,15 +57,17 @@
 }
 
 .year h1 {
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: 700;
   color: #01213c;
   text-shadow: -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff,
     -1px -1px 0 #ffffff;
 }
 .ihack {
+  padding-top: 0px;
   margin-bottom: 0px;
 }
+
 .year {
   margin-top: -30px;
 }
@@ -79,6 +78,9 @@
 }
 .dates span {
   color: #55bef6;
+}
+.intro-content{
+  margin-top: 40px;
 }
 
 /* @media (min-width: 350px) and (max-width: 400px) {
@@ -100,7 +102,7 @@
     padding-right:7vw;
   }
   .ihack-behind{
-    margin-left: 4vw;
+   
   }
   .ihack-behind span{
     font-size: 6rem;
@@ -109,13 +111,12 @@
     font-size: 6rem;
   }
   .year{
-    font-size:6rem;
-    margin-left:9vw;
     margin-bottom: -10px;
   }
+  
   .dates{
     font-size: 1.75rem;
-    margin-left:1vw;
+    
     margin-bottom: 40px;
   }
   .intro {
@@ -128,7 +129,7 @@
     font-weight:100;
   }
   .intro-content button{
-    margin-left:11vw;
+    margin-left:0vw;
   }
   .message{
     margin-bottom:30px;
@@ -138,9 +139,7 @@
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
-  .intro-wrapper .col {
-    text-align: center;
-  }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */

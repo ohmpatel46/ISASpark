@@ -3,6 +3,7 @@ body {
   color: white;
 }
 
+
 .banner-behind {
   background-image: repeating-linear-gradient(
     -45deg,
@@ -14,6 +15,7 @@ body {
   padding-left: 4px;
   height: 6vh;
   width: clamp(150px, 12vw, 300px);
+  margin-left: 38vw;
 }
 .banner-front {
   background-color: #5ac1f8;
@@ -30,6 +32,16 @@ body {
   margin-top: 20px;
   color: white;
   font-size: 0.9rem;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+.intro-wrapper{
+  padding-left: 5vw;
+  padding-right:5vw;
+}
+.wrapper{
+  padding-left: 5vw;
+  padding-right:5vw;
 }
 
 @media (max-width: 600px) {
@@ -41,11 +53,13 @@ body {
     padding-left: 7vw;
     padding-right:7vw;
   }
+
   .aboutus-content
   {
     margin-top: 30px;
     font-size: 1rem;
     margin-bottom: 50px;
+    padding: 0;
   }
   .banner-behind{
     margin-left: 21vw;
@@ -54,6 +68,8 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
+
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
