@@ -1,21 +1,134 @@
-.speaker-back{
-    width: 70vw;
-    height: 70vw;
+
+.speakers-content{
+    margin-bottom:0px;
+    margin-top: 20px;
+    padding-top: 50px;
+    margin-left: -2vw;
 }
-.speaker-image{
+.speakers-bg{
+    height: 40vw;
+    width: 40vw;
+}
+.speakers-img{
+    height: 25vw;
+    width: 25vw;
     border-radius: 50%;
-    width: 50vw;
-    height: 50vw;
+    position: relative;
+    top:-35vw;
+    left:8vw;
+    margin-right: 0px;
+}
+.speaker-name{
+    color: #5AC1F8;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-left: 3vw;
+}
+.speaker-job{
+    font-size: 1.3rem;
+    margin-bottom: 4vh;
+}
+.speaker-para{
+    font-size:1.3rem;
+}
+.speaker{
+    height:90vh !important;
+    padding-top: 20vh;
+}
+.speaker-desc-odd{
+    border-left: 2px solid #5AC1F8;
+    padding-left: 3vw;
+    padding-right: 10vw;
+    
+}
+.speaker-desc-even{
+    border-right: 2px solid #5AC1F8;
+    padding-right: 3vw;
+    padding-left: 10vw;
+}
+.sp{
+    padding-left:5vw;
+    height:90vh !important;
+}
+.speaker-index{
+    z-index:-1;
+    font-size:5.5rem;
+    color: #2A4F70;
+    font-weight:700;
     position: relative;
     top:-29vh;
-    left:18vw;
+    left:20vw;
+    width:fit-content;
 }
-
+.index-even{
+    left:2vw;
+}
 @media (max-width: 600px) {
     .speakers-content{
-        margin-bottom:50px;
+        margin-bottom:0px;
         margin-top: 20px;
+        padding-top: 50px;
+        margin-left: -2vw;
     }
+    .speakers-bg{
+        height: 45vw;
+        width: 45vw;
+    }
+    .speakers-img{
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        position: relative;
+        top:-40vw;
+        left:8vw;
+        margin-right: 0px;
+    }
+    .speaker-name{
+        color: #5AC1F8;
+        font-weight: 700;
+        font-size: 1.1rem;
+        padding-left: 3vw;
+    }
+    .speaker-job{
+        font-size: 0.75rem;
+    }
+    .speaker-para{
+        font-size:0.75rem;
+    }
+    .speaker{
+        padding: 0 !important;
+        height:28vh !important;
+    }
+    .speaker-desc-odd{
+        border-left: 2px solid #5AC1F8;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        
+    }
+    .speaker-desc-even{
+        border-right: 2px solid #5AC1F8;
+        padding-right: 3vw;
+        padding-left: 3vw;
+    }
+    .sp{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        height:28vh !important;
+    }
+    .speaker-index{
+        z-index:-1;
+        font-size:5.5rem;
+        color: #2A4F70;
+        font-weight:700;
+        position: relative;
+        top:-29vh;
+        left:20vw;
+        width:fit-content;
+    }
+    .index-even{
+        left:2vw;
+    }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
