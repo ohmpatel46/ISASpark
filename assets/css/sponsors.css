@@ -1,3 +1,16 @@
+.sponsors-content{
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.sponsor-row{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sponsor-row img{
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+}
 @media (max-width: 600px) {
     .sponsors-content
   {

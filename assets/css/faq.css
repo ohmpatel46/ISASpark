@@ -1,108 +1,40 @@
-/* .faq-heading h2 {
-  margin: 60px;
-  display: inline;
-  font-weight: 600;
-  line-height: 1;
-  border: solid 0.1em #59bff6;
-  background-color: #59bff6;
-  padding: 10px 40px;
-  font-size: 30px;
+
+.faq-wrapper{
+  margin-top: 50px;
 }
-
-.faq-heading {
-  margin: 60px;
-  text-align: center;
-}
-
-.faq .card {
-  border: none;
-  background: none;
-  border-bottom: 4px solid #ffffff;
-}
-
-.faq .card .card-header {
-  padding: 20px 0;
-  border: none;
-  background: none;
-}
-
-.faq .card .card-header .faq-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  text-align: left;
-  font-weight: lighter;
-  font-size: 25px;
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.faq .card .card-header .faq-title i {
-  padding: 0.5rem;
-}
-
-.faq .card .card-header .faq-title .ion-md-remove-circle {
-  display: none;
-}
-
-.faq .card .card-body {
-  font-size: 25px;
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  /* transition: max-height 600ms; */
-/* }
-
-.faq .card .card-body::before {
-  content: "";
-  position: absolute;
-}
-
-.faq .card .card-body p {
-  margin-bottom: 14px;
-  padding-bottom: 16px;
-  margin-top: 0;
-  color: #ffffff;
-}
-
-.faq .card:target .faq-title {
-  color: #59bff6;
-}
-
-.faq .card:target .card-body {
-  max-height: 20rem;
-}
-
-.faq .card:target .card-header .ion-md-add-circle {
-  display: none;
-}
-
-.faq .card:target .card-header .ion-md-remove-circle {
-  display: block;
-}
-
-@media (max-width: 991px) {
-  .faq {
-    margin-bottom: 30px;
-  }
-  .faq .card .card-header .faq-title {
-    line-height: 26px;
-    margin-top: 10px;
-  }
-}  */
-.accordion-button,.accordion-body{
-  color:white ;
+.faq-content{
+  padding-left: 15vw;
+  padding-right: 15vw;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 .accordion-header{
-  border-bottom: 5px solid white;
+  
+  border-bottom: 3px solid white;
 }
+.accordion-header button{
+  width:100%;
+  background-color: transparent;
+  color:white;
+  text-align: left;
+  font-size: 1rem;
+  border:none;
+}
+.accordion-header button:active,.accordion-header button:focus{
+  outline: none;
+}
+.expand-icon{
+  width:30px;
+  height:30px;
+  float:right;
+}
+
 @media (max-width: 600px) {
   .faq-content
   {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0px;
   }
 }
 
