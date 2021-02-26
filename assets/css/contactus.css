@@ -1,3 +1,73 @@
+.contactus-content{
+    margin-top:50px;
+    margin-bottom:100px;
+    padding-left: 5vw;
+    padding-right: 10vw;
+    display:flex;
+    justify-content: left;
+}
+.contactus-form-box{
+    background-color: #133156;
+    padding:5vw 5vw;
+    
+    width:95%;
+    display:inline-block;
+}
+.contactus-left{
+    
+    width:70%;
+    margin:0;
+}
+.contactus-form{
+    margin:0;
+    margin-top:10vh;
+    
+}
+.contactus-form input{
+    display:flex;
+    width:100%;
+    font-size:1.3rem;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color:white;
+}
+.contactus-form button{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    font-size:1.3rem;
+    background-color:#5AC1F8;
+    border:none;
+    color:white;
+    margin-top: 25px;
+    border-radius: 2px;
+    
+}
+.contactus-form input::placeholder{
+    
+    color:white;
+}
+.contactus-title{
+    font-size:1.8rem;
+    color:#59BEF5;
+    
+    margin:0;
+}
+.info-svg{
+    position: relative;
+    float:right;
+    top:-430px;
+    left:-50px;
+    
+}
+.info-svg img{
+    width:400px;
+    height:400px;
+}
+
 @media (max-width: 600px) {
     .contactus-content{
         margin-bottom:50px;

@@ -1,0 +1,65 @@
+.tracks-wrapper{
+    margin-bottom: 100px;
+}
+.tracks-content{
+    margin-top:50px;
+}
+.track-card-wrap{   
+    padding:20px 3vw;
+    padding-bottom: 0px;
+}
+.track-card{
+    background-color:#CCE5FB;
+    height:400px;
+    border-radius: 10%;
+    
+}
+.track-card-content{
+    padding: 20px 0px;
+}
+.track-card-content img{
+    
+}
+.track-card-content h3{
+    color:black;
+    font-weight: 700;
+    margin-top: -70px;
+}
+.track-card-footer{
+    
+    border-radius: 10%;
+    
+}
+.track-footer{
+    background-color:#2B4459;
+    width:100%;
+    border-radius:30px;
+    padding:0;
+    font-size: 50px;
+    color:#CCE5FB;
+    font-weight:100;
+    
+}
+
+@media(max-width: 600px) {
+    
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1300px) {
+}
+
+@media (min-width: 1300px) and (max-width: 1367px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1367px) {
+}
