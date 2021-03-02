@@ -1,6 +1,8 @@
 .navbar{
-    
+    position: fixed;
+    width: 100%;
 }
+
 .navbar-brand img{
     width:55px;
     height: 55px;

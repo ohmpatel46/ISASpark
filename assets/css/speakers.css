@@ -5,6 +5,7 @@
     padding-top: 50px;
     margin-left: -2vw;
 }
+
 .speakers-bg{
     height: 40vw;
     width: 40vw;
@@ -72,6 +73,9 @@
         height: 45vw;
         width: 45vw;
     }
+    .speakers-content .row{
+        margin-bottom:30px;
+    }
     .speakers-img{
         height: 30vw;
         width: 30vw;
@@ -131,6 +135,9 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
+    .speakers-content .row{
+        margin-bottom:30px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

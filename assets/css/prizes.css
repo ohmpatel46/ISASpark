@@ -1,3 +1,62 @@
 .prizes-wrapper{
     margin-bottom:100px;
 }
+.prizes-content{
+    margin-top:100px;
+}
+.prize{
+    padding:0;
+    margin:0;
+    margin-bottom: 50px;
+    display:inline-block;
+}
+.prize-underline{
+    width:160px;
+    margin-top: 50px;
+    margin-bottom:30px;
+    border-bottom:3.5px solid #5AC1F8;
+}
+.prize-behind{
+    background: red;
+    width: 130px;
+    height: 130px;
+    transform: rotate(20deg);
+}
+.prize-front{
+    height: 130px;
+    width: 130px;
+    background: red;
+    transform: rotate(135deg);
+    display:flex;justify-content:center;
+    align-items: center;
+}
+.rotate-text{
+    display: inline-block;
+    transform: rotate(-155deg);
+    color:black;
+    font-size:3.5rem;
+    font-weight: 700;
+}
+
+.prize-first .prize-behind,.prize-first .prize-front{
+    background:#FFD700;
+}
+.prize-second .prize-behind,.prize-second .prize-front{
+    background:#D3D3D3;
+}
+.prize-third .prize-behind,.prize-third .prize-front{
+    background:#FF432D;
+}
+
+.prize-text{
+    height:180px;
+    width: 70%;
+    color:#000000;
+    font-size:2rem;
+    font-weight:600;
+    background:#CCE5FB;
+    border-radius: 10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

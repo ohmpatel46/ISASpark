@@ -1,6 +1,7 @@
 
 footer{
     margin-top:50px;
+    
 }
 .footer-content{
     width:100%;
@@ -28,11 +29,12 @@ footer{
 .footer-icons a{
     width: 30px;
     height:30px;
+    margin-left:3px;
     
 }
 .footer-icons a img{
-    width: 20px;
-    height:20px;
+    width: 30px;
+    height:30px;
     
 }
 .linkedin-icon{
