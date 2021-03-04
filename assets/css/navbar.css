@@ -1,6 +1,7 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index:2;
 }
 
 .navbar-brand img{
@@ -12,6 +13,10 @@
 }
 .nav-item{
     margin-left: 2vw;
+}
+.navbar.scrolled {
+    background-color: #01213C !important;
+    transition: background-color 200ms linear;
 }
 @media (max-width: 600px) {
     .navbar .container-fluid{

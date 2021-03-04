@@ -1,19 +1,49 @@
 .timeline-wrapper{
     margin-bottom:100px;
 }
+#road{
+    width:90%;
+}
+.timeline-content{
+    margin-top:50px;
+    
+}
+#start{
+    width:12%;
+    position: relative;
+    top:35px;
+    left:0.3%;
+    z-index:0;
+}
+#finish{
+    width:12%;
+    position: relative;
+    right:11%;
+    top:-100px;
+    z-index:0;
+}
 @media (max-width: 600px) {
     .timeline-content{
         margin-top:20px;
         margin-bottom: 50px;
     }
+    #finish{ 
+        top:-10vw;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
+    #finish{ 
+        top:-10vw;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+    #finish{ 
+        top:-10vw;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
