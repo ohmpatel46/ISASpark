@@ -53,7 +53,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <div class="toggler-line"></div>
+          <div class="toggler-line"></div>
+          <div class="toggler-line"></div>
         </button>
         <a class="navbar-brand" href="#"
           ><img src="./assets/images/Spark_LOGO.svg"
@@ -67,7 +69,7 @@
               <a class="nav-link" href="#aboutus">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Prizes</a>
+              <a class="nav-link" href="#prizes">Prizes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#timeline">Timeline</a>
@@ -95,7 +97,8 @@
     <!--==================
         Intro starts here
         ==================-->
-    <div class="container-fluid intro-wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/images/Scrolltop.svg"></button>
+    <div class="container-fluid intro-wrapper d-flex flex-column justify-content-between">
       <div class="row d-flex flex-row-reverse">
         <div class="col-md-6 ihack">
           <div class="ihack-behind d-flex justify-content-end">
@@ -113,7 +116,7 @@
         </div>
 
         <div class="col-md-6 intro-content">
-          <h1><span class="intro">Lorem Ipsum Lorem</span></h1>
+          <h1>Lorem Ipsum Lorem</h1>
           <h3>Lorem Ipsum Lorem</h3>
           <p class="message">
             Officia commodo Lorem est reprehenderit tempor laboris est sunt
@@ -146,6 +149,9 @@
           >
         </div>
       </div>
+      <div class="row d-flex justify-content-center scroll-container">
+        <a class="d-flex justify-content-center scrollbottom" href="#aboutus"><img class="" src="./assets/images/Scrollbottom.svg"></a>
+      </div>
     </div>
     <!--==================
         Intro ends here
@@ -161,7 +167,7 @@
             class="d-flex justify-content-center"
             style="width: 100% !important"
           >
-            <div class="banner-behind" id="#aboutus">
+            <div class="banner-behind" id="aboutus">
               <div class="banner-front">
                 <h1>About Us</h1>
               </div>
@@ -201,7 +207,7 @@
           </div>
           <div class="tracks-content">
             <div class="row">
-              <div class="col-md-4 track-card-wrap">
+              <div class="col-6 col-md-4 track-card-wrap">
                 <div
                   class="track-card d-flex flex-column justify-content-between"
                 >
@@ -218,7 +224,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 track-card-wrap">
+              <div class="col-6 col-md-4 track-card-wrap">
                 <div
                   class="track-card d-flex flex-column justify-content-between"
                 >
@@ -235,7 +241,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 track-card-wrap">
+              <div class="col-6 col-md-4 track-card-wrap">
                 <div
                   class="track-card d-flex flex-column justify-content-between"
                 >
@@ -254,7 +260,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 track-card-wrap">
+              <div class="col-6 col-md-4 track-card-wrap">
                 <div
                   class="track-card d-flex flex-column justify-content-between"
                 >
@@ -271,7 +277,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 track-card-wrap">
+              <div class="col-6 col-md-4 track-card-wrap">
                 <div
                   class="track-card d-flex flex-column justify-content-between"
                 >
@@ -288,7 +294,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 track-card-wrap">
+              <div class="col-6 col-md-4 track-card-wrap">
                 <div
                   class="track-card d-flex flex-column justify-content-between"
                 >
@@ -334,35 +340,29 @@
           <div class="prizes-content">
             <div class="row">
               <div
-                class="col-md-4 prize prize-first d-flex flex-column align-items-center"
+                class="col-4 prize prize-first d-flex flex-column align-items-center"
               >
-                <div class="prize-behind">
-                  <div class="prize-front">
-                    <span class="rotate-text">1st</span>
-                  </div>
+                <div class="prize-image prize-down">
+                  <img src="./assets/images/2nd.svg">
                 </div>
                 <div class="prize-underline"></div>
                 <div class="prize-text"><p>TBD</p></div>
               </div>
               <div
-                class="col-6 col-md-4 prize prize-second d-flex flex-column align-items-center"
+                class="col-4 prize prize-second d-flex flex-column align-items-center"
               >
-                <div class="prize-behind">
-                  <div class="prize-front">
-                    <span class="rotate-text">2nd</span>
-                  </div>
+                <div class="prize-image">
+                  <img src="./assets/images/1st.svg">
                 </div>
                 <div class="prize-underline"></div>
                 <div class="prize-text"><p>TBD</p></div>
               </div>
               <div
-                class="col-6 col-md-4 prize prize-third d-flex flex-column align-items-center"
+                class="col-4 prize prize-third d-flex flex-column align-items-center"
               >
-                <div class="prize-behind">
-                  <div class="prize-front">
-                    <span class="rotate-text">3rd</span>
-                  </div>
-                </div>
+              <div class="prize-image prize-down">
+                <img src="./assets/images/3rd.svg">
+              </div>
                 <div class="prize-underline"></div>
                 <div class="prize-text"><p>TBD</p></div>
               </div>
@@ -530,7 +530,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseOne"
                   >
-                    Accordion Item #1
+                    1. Can I take part in iHACK if I am alone/don’t have teammates?
                     <img
                       class="expand-icon"
                       src="./assets/images/Frame 105.svg"
@@ -544,17 +544,7 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    Yes, you can, but you will be provided teammates randomly.
                   </div>
                 </div>
               </div>
@@ -568,7 +558,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
                   >
-                    Accordion Item #2
+                    2. Do all the participants in a team necessarily be from the same university?
                     <img
                       class="expand-icon"
                       src="./assets/images/Frame 105.svg"
@@ -582,17 +572,7 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    No, there are no restrictions regarding universities. Your team can have members from different universities across the globe!
                   </div>
                 </div>
               </div>
@@ -606,7 +586,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseThree"
                   >
-                    Accordion Item #3
+                    3. How long is the Hackathon?
                     <img
                       class="expand-icon"
                       src="./assets/images/Frame 105.svg"
@@ -620,31 +600,21 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    The entire hackathon will be 48 hours long.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
+                <h2 class="accordion-header" id="flush-headingFour">
                   <button
                     class="collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
+                    data-bs-target="#flush-collapseFour"
                     aria-expanded="false"
-                    aria-controls="flush-collapseThree"
+                    aria-controls="flush-collapseFour"
                   >
-                    Accordion Item #3
+                    4. Is the event paid?
                     <img
                       class="expand-icon"
                       src="./assets/images/Frame 105.svg"
@@ -652,37 +622,27 @@
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseThree"
+                  id="flush-collapseFour"
                   class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
+                  aria-labelledby="flush-headingFour"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    No, it is completely free of cost.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
+                <h2 class="accordion-header" id="flush-headingFive">
                   <button
                     class="collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
+                    data-bs-target="#flush-collapseFive"
                     aria-expanded="false"
-                    aria-controls="flush-collapseThree"
+                    aria-controls="flush-collapseFive"
                   >
-                    Accordion Item #3
+                    5. Will there be any events conducted in the days leading up to the main event?
                     <img
                       class="expand-icon"
                       src="./assets/images/Frame 105.svg"
@@ -690,23 +650,321 @@
                   </button>
                 </h2>
                 <div
-                  id="flush-collapseThree"
+                  id="flush-collapseFive"
                   class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
+                  aria-labelledby="flush-headingFive"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life
-                    accusamus terry richardson ad squid. 3 wolf moon officia
-                    aute, non cupidatat skateboard dolor brunch. Food truck
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee
-                    nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                    Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them
-                    accusamus labore sustainable VHS.
+                    Yes, there will be workshops conducted weeks prior to the hackathon. These workshops will have topics based on the tracks for the hackathon.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    6. What is the eligibility criteria for prizes?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    It will vary for each different track.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSeven"
+                  >
+                    7. How can we register for the event?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSeven"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You can apply via Devfolio. The link is provided on the home page.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEight"
+                  >
+                    8. What do I get for participating?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEight"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    A certificate of participation and ample learning experience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseNine"
+                  >
+                    9. How do I get in touch with mentors?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingNine"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    A channel will be provided on the Discord server to help you get in touch with the mentors.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTen">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTen"
+                  >
+                    10. What can be the size of a team?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    A minimum of 2 and maximum of 5 members in one team.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEleven">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEleven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEleven"
+                  >
+                    11. What if I don’t have any coding background?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEleven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEleven"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    There are several workshops being held before and during the event where you can get to learn a lot. Moreover, the mentors will be ready to help you.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwelve">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwelve"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwelve"
+                  >
+                    12. Can we base our submission off of an earlier prepared project?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwelve"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwelve"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    No, your projects must be built from scratch, however you can incorporate previously built APIs in your submission.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThirteen">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThirteen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThirteen"
+                  >
+                    13. How can I be notified of all the updates about the upcoming events and the hackathon?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThirteen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThirteen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You can join the Discord server through the link on the home page, and you can also download the SPARK’21 app available on Google Play Store.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFourteen">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFourteen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFourteen"
+                  >
+                    14. Do I need to give a demo for the product I have built?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFourteen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFourteen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    If you wish to submit a small presentation or video that demonstrates the working of your product, you may do so. However, it’s not mandatory.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFifteen">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFifteen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFifteen"
+                  >
+                    15. Will there be any events conducted in the days leading up to the main event?
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFifteen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFifteen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The entire idea need not be fully implemented however, the submission should be functional so that it can be reviewed by the judges.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSixteen">
+                  <button
+                    class="collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSixteen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSixteen"
+                  >
+                    16. My question is not here.
+                    <img
+                      class="expand-icon"
+                      src="./assets/images/Frame 105.svg"
+                    />
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSixteen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSixteen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You can contact us through our email id given below, or through our Facebook or Instagram handles and ask any questions you might have about the event.
                   </div>
                 </div>
               </div>
@@ -781,47 +1039,10 @@
     <!--==================
         Contact Us starts here
         ==================-->
-    <!-- <div class="container-fluid contactus-wrapper wrapper">
-      <div>
-        <div class="col">
-          <div
-            class="d-flex justify-content-center"
-            style="width: 100% !important"
-          >
-            <div class="banner-behind" id="contactus">
-              <div class="banner-front">
-                <h1>Contact Us</h1>
-              </div>
-            </div>
-          </div>
-          <div class="contactus-content">
-            <div class="contactus-form-box">
-              <div class="contactus-left">
-                <h3 class="contactus-title">
-                  Feel free to contact us any time. We will get back to you as
-                  soon as we can!
-                </h3>
-                <form class="contactus-form">
-                  <input type="text" placeholder="Name" />
-                  <input type="text" placeholder="Email" />
-                  <input type="text" placeholder="Message" />
-                  <button type="submit">SEND</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="info-svg">
-            <img src="assets/images/Group 110.svg" />
-          </div>
-        </div>
-      </div>
-    </div> -->
+    
     <div class="container-fluid wrapper contactus-wrapper">
-      <div class="col">
-        <div
-          class="d-flex justify-content-center"
-          style="width: 100px; !important"
-        >
+      <div class="col ">
+        <div class="d-flex justify-content-center" ">
           <div class="banner-behind" id="contactus">
             <div class="banner-front">
               <h1>Contact Us</h1>
@@ -844,7 +1065,7 @@
                 </form>
               </div>
             </div>
-            <div class="side">
+            <div class="">
               <div class="info-svg">
                 <img src="assets/images/Group 110.svg" />
               </div>
@@ -961,6 +1182,8 @@
     <script src="./assets/js/devfolio.js"></script>
 
     <script>
+
+
       $(window).ready(function () {
         adjustalign();
       });
@@ -986,10 +1209,33 @@
         }
       }
 
+      $("nav-link").click(function(){
+        var bruh=document.documentElement.scrollTop;
+        bruh=bruh+50;
+        document.documentElement.scrollTop=bruh;
+      });
+
       $(document).scroll(function () {
         var $nav = $(".navbar");
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
       });
+
+
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 100) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
   </body>
 </html>

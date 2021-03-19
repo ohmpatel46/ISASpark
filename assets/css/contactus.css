@@ -12,20 +12,23 @@
   width: 95%;
   display: flex;
 }
+
 .side .contactus-left {
+  width: 80%;
 }
-.info-svg {
+.info-svg img{
   width: 400px;
   height: 400px;
-  margin-right: -10rem;
+  margin-right: -15rem;
 }
+
 .contactus-left {
   width: 70%;
   margin: 0;
 }
 .contactus-form {
   margin: 0;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 .contactus-form input {
   display: flex;
@@ -101,6 +104,10 @@
   .contactus-form-box {
     width: 100%;
   }
+  .side .contactus-left {
+    width: 100%;
+  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -119,6 +126,10 @@
   .contactus-form-box {
     width: 100%;
   }
+  .side .contactus-left {
+    width: 100%;
+  }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -137,16 +148,19 @@
   .contactus-form-box {
     width: 100%;
   }
+  .side .contactus-left {
+    width: 100%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1300px) {
-  .info-svg {
+  /* .info-svg {
     position: relative;
     float: right;
     top: -510px;
     left: 2.5vw;
-  }
+  } */
   .info-wrapper {
     display: none;
   }

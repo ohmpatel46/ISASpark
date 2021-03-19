@@ -2,6 +2,7 @@
     position: fixed;
     width: 100%;
     z-index:2;
+    
 }
 
 .navbar-brand img{
@@ -13,14 +14,55 @@
 }
 .nav-item{
     margin-left: 2vw;
+    padding-bottom: 7px;
+    border-bottom:5px solid transparent;
+}
+.nav-item:hover{
+    border-bottom:5px solid #55BEF6;
+    border-radius: 5px;
 }
 .navbar.scrolled {
-    background-color: #01213C !important;
+    background-color: #2A5071 !important;
     transition: background-color 200ms linear;
 }
+.navbar-toggler{
+    border-radius:20px;
+    background-color:#55BEF6;
+}
+.navbar-toggler:active,.navbar-toggler:focus{
+    box-shadow: none;
+} 
+.toggler-line{
+    height:5px;
+    width:30px;
+    margin: 4px 7px;
+    background-color: white;
+}
+.nav-link{
+    font-size:20px;
+    padding:0px 10px !important;
+    
+    
+    border:2px solid transparent;
+    transition: border-radius 0ms;
+}
+
+.nav-link:hover{
+    border:2px solid #55BEF6;
+    border-radius:20px;
+    
+}
+
 @media (max-width: 600px) {
     .navbar .container-fluid{
         padding-right: 0vw;
+    }
+    .navbar-body{
+        background-color: #2A5071;
+        
+    }
+    .navbar.scrolled {
+        background-color: transparent  !important;
     }
 }
 

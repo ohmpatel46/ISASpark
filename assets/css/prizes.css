@@ -16,7 +16,7 @@
     margin-bottom:30px;
     border-bottom:3.5px solid #5AC1F8;
 }
-.prize-behind{
+/* .prize-behind{
     background: red;
     width: 130px;
     height: 130px;
@@ -29,6 +29,12 @@
     transform: rotate(135deg);
     display:flex;justify-content:center;
     align-items: center;
+} */
+.prize-image img{
+    height: 270px;
+}
+.prize-down{
+    margin-top:200px;
 }
 .rotate-text{
     display: inline-block;
