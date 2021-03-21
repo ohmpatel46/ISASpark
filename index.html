@@ -54,8 +54,8 @@
           aria-label="Toggle navigation"
         >
           <div class="toggler-line"></div>
-          <div class="toggler-line"></div>
-          <div class="toggler-line"></div>
+          <div class="toggler-line toggler-middle-line"></div>
+          <div class="toggler-line toggler-bottom-line"></div>
         </button>
         <a class="navbar-brand" href="#"
           ><img src="./assets/images/Spark_LOGO.svg"
@@ -65,26 +65,26 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About</a>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#aboutus">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#prizes">Prizes</a>
+              <a class="nav-link active" href="#prizes">Prizes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#timeline">Timeline</a>
+              <a class="nav-link active" href="#timeline">Timeline</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#speakers">Speakers</a>
+              <a class="nav-link active" href="#speakers">Speakers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQ</a>
+              <a class="nav-link active" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sponsors">Sponsors</a>
+              <a class="nav-link active" href="#sponsors">Sponsors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contactus">Contact</a>
+              <a class="nav-link active" href="#contactus">Contact</a>
             </li>
           </ul>
         </div>
@@ -1183,6 +1183,25 @@
 
     <script>
 
+      $('.navbar-collapse').on('show.bs.collapse', function () {
+        $(".navbar-toggler").css("background-color", "transparent");
+        $(".navbar-toggler").css("border", "none");
+        $(".toggler-middle-line").css("margin-left", "15px");
+        $(".toggler-middle-line").css("transition", "0.2s ease-in");
+        $(".toggler-bottom-line").css("margin-left", "2px");
+        $(".toggler-bottom-line").css("transition", "0.2s ease-in");
+        $(".navbar-toggler").css("transition", "0.2s ease-in");
+      });
+
+      $('.navbar-collapse').on('hide.bs.collapse', function () {
+        $(".navbar-toggler").css("background-color", " #55BEF6");
+        
+        $(".toggler-middle-line").css("margin-left", "7px");
+        $(".toggler-middle-line").css("transition", "0.2s ease-out");
+        $(".toggler-bottom-line").css("margin-left", "7px");
+        $(".toggler-bottom-line").css("transition", "0.2s ease-out");
+        $(".navbar-toggler").css("transition", "0.2s ease-out");
+      });
 
       $(window).ready(function () {
         adjustalign();
