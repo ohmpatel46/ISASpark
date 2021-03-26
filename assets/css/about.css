@@ -33,11 +33,14 @@ body {
   font-size: 1.9rem;
 }
 .aboutus-content {
-  margin-top: 20px;
+  margin-top: 40px;
   color: white;
   font-size: 0.9rem;
   padding-left: 25vw;
   padding-right: 25vw;
+}
+.aboutus-content p{
+  text-align: justify;
 }
 .intro-wrapper{
   padding-left: 5vw;

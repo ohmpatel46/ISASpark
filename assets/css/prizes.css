@@ -30,29 +30,17 @@
     display:flex;justify-content:center;
     align-items: center;
 } */
+.prize-image{
+    z-index: 10;
+}
 .prize-image img{
-    height: 270px;
+    height: 200px;
+    width: 200px;
 }
 .prize-down{
     margin-top:200px;
 }
-.rotate-text{
-    display: inline-block;
-    transform: rotate(-155deg);
-    color:black;
-    font-size:3.5rem;
-    font-weight: 700;
-}
 
-.prize-first .prize-behind,.prize-first .prize-front{
-    background:#FFD700;
-}
-.prize-second .prize-behind,.prize-second .prize-front{
-    background:#D3D3D3;
-}
-.prize-third .prize-behind,.prize-third .prize-front{
-    background:#FF432D;
-}
 
 .prize-text{
     height:180px;
@@ -67,18 +55,74 @@
     align-items:center;
 }
 
+.prize-ribbons{
+    position: relative;
+    top:-35px;
+}
+.left-ribbon{
+    z-index: 0;
+}
+
+.right-ribbon{
+    transform: rotate(-48.38deg);
+}
+
 @media(max-width: 600px) {
-    .prizes-content{
-        display:none;
+    .prize-ribbons{
+        display: none;
+    }
+    .prize-image img{
+        height: 100px;
+        width: 100px;
+    }
+    .prize-text{
+        height:100px;
+        width:140px;
+    }
+    .prize-down{
+        margin-top:300px;  
+    }
+    .prize-second{
+        position: relative;
+        left:20px;
+    }
+    .prize-third{
+        position: relative;
+        left:-20px;
+    }
+    .prize-underline{
+        width:100px;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
+    .prize-ribbons{
+        display: none;
+    }
+    .prize-image img{
+        height: 150px;
+        width: 150px;
+    }
+    .prize-text{
+        height:120px;
+        width:90%;
+    }
     
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+    .prize-ribbons{
+        display: none;
+    }
+    .prize-image img{
+        height: 150px;
+        width: 150px;
+    }
+    .prize-text{
+        height:150px;
+        width:90%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

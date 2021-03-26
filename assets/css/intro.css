@@ -37,7 +37,8 @@
 
 .message {
   color: #55bef6;
-  font-size:1.3rem;
+  font-size:1rem;
+  text-align: justify;
 }
 .intro-wrapper{
   padding-top:130px;
@@ -202,12 +203,14 @@
   }
   .intro-content h1{
     font-size:2rem;
+    margin-right: auto;
   }
   .intro-content h3 {
     margin-top: -5px;
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight:100;
+    margin-right: auto;
   }
   .intro-content button{
     margin-left:0vw;
