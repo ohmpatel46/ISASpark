@@ -42,29 +42,57 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding:0;
+    position: relative;
     font-size: 50px;
     color:#CCE5FB;
     font-weight:100;
-    
+    z-index:10;
 }
 .track-footer img{
     margin:15px 0;
+    height:36px;
+    width:46px;
+    -webkit-transition-duration: 0.2s;
 }
 
+.disappear{
+    display: none !important;
+}
+.expand{
+    height:100% !important;
+}
+.invert{
+    transform: rotate(180deg);
+}
+.track-desc{
+    font-size:1.5rem;
+    padding: 10px 10px;
+    text-align: center;
+}
 @media(max-width: 600px) {
     .track-footer{
-        display:none !important;
+        border-top-left-radius:10%;
+        border-top-right-radius: 10%;
+    }
+    .track-footer img{
+        margin:10px 0;
+        height:18px;
+        width:26px;
+        -webkit-transition-duration: 0.2s;
     }
     .track-card{
-        height:150px; 
+        height:200px; 
     }
     .track-card-content img{
-        height:80px;
-        width:80px;
+        height:70px;
+        width:70px;
     }
     .track-card-heading h3{
         position: relative;
         top:-20px;
+    }
+    .track-desc{
+        font-size:0.75rem;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
