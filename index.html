@@ -64,7 +64,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-body">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#intro">Home</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link active" href="#aboutus">About</a>
@@ -99,7 +99,7 @@
         Intro starts here
         ==================-->
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/images/Scrolltop.svg"></button>
-    <div class="container-fluid intro-wrapper d-flex flex-column justify-content-between">
+    <div class="container-fluid intro-wrapper d-flex flex-column justify-content-between" id="intro">
       <div class="row d-flex flex-row-reverse">
         <div class="col-md-6 ihack">
           <div class="ihack-behind d-flex justify-content-end">
@@ -1205,6 +1205,16 @@
     <script src="./assets/js/devfolio.js"></script>
 
     <script>
+
+    $(".nav-link").click(function() {
+      event.preventDefault();
+      var y=$(this).attr("href");
+      console.log(y);
+        var x=$(y).offset().top - 100;
+        $([document.documentElement, document.body]).animate({
+            scrollTop:x 
+        }, 200);
+    });
 
       $('.navbar-collapse').on('show.bs.collapse', function () {
         $(".navbar-toggler").css("background-color", "transparent");
