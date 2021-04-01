@@ -13,10 +13,15 @@
 }
 .gif-container{
     width:100%;
+    box-shadow: none;
+    border:none !important;
+    position: relative;
+    top:-130px;
+    z-index: -1;
 }
 #spark-gif{
     width:100%;
-    height: 400px;
+    height: 800px;
 }
 .countdown-timer{
     color:white;
@@ -25,6 +30,9 @@
 .countdown-timer{
     font-size:3vw;
     font-weight:700;
+    z-index:99;
+    position: relative;
+    top:-380px;
 }
 .colon{
     color:#2F7BC7;
@@ -60,11 +68,12 @@
 
 
 body{
-    background: linear-gradient(90deg, #01213c 29px, transparent 1%) center, linear-gradient(#01213c 29px, transparent 1%) center, #183852;
+    background-color:#002541;
     background-size: 32px 32px;
     margin: 0;
     width:100vw;
     height:100vh;
+    overflow: hidden;
 }
 
 @media (max-width: 600px){
