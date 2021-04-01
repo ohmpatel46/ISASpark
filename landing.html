@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link href="./assets/css/landing.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <style></style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/images/Spark_LOGO.svg" /></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-body">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#aboutus">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#prizes">Prizes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#speakers">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html#sponsors">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html#contactus">Contact</a>
+                    </li>
+                    <li class="nav-item ihack">
+                        <a class="ihack-button " href="./index.html">Continue to iHack</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="gif-container">
+        <img id="spark-gif" src="./assets/images/catjam.gif" />
+    </div>
+    <div class="countdown-timer d-flex justify-content-center">
+        <div id="demo" class="d-flex"></div>
+    </div>
+    <!-- <div class="ihack d-flex justify-content-center">
+        <a class="ihack-button">Continue to IHack</a>
+    </div> -->
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 5, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if(days<10){
+                days="0"+days;
+            }
+            if(hours<10){
+                hours="0"+hours;
+            }
+            if(minutes<10){
+                minutes="0"+minutes;
+            }
+            if(seconds<10){
+                seconds="0"+seconds;
+            }
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = "<div class='flex-column time-unit'><div class='d-flex flex-row justify-content-center time-value'>"+days +"</div>" +"<div>"+"<p class='times'>Days</p>"+"</div></div>"+ "<div class='flex-column'><div class='colon'>:</div></div>" +
+            "<div class='flex-column time-unit'><div class='d-flex flex-row justify-content-center time-value'>"+hours +"</div>" +"<div>"+"<p class='times'>Hours</p>"+"</div></div>"+ "<div class='flex-column'><div class='colon'>:</div></div>" +
+            "<div class='flex-column time-unit'><div class='d-flex flex-row justify-content-center time-value'>"+minutes +"</div>" +"<div>"+"<p class='times'>Minutes</p>"+"</div></div>"+ "<div class='flex-column'><div class='colon'>:</div></div>" +
+            "<div class='flex-column time-unit'><div class='d-flex flex-row justify-content-center time-value'>"+seconds+"</div>" +"<div>"+"<p class='times'>Seconds</p>"+"</div></div>";
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "The Event has begun!!";
+            }
+        }, 1000);
+    </script>
+</body>
+
+
+</html>

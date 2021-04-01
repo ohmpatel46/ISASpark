@@ -1,0 +1,75 @@
+
+.nav-item{
+    font-size:20px;
+    margin-right: 40px;
+}
+.navbar-brand img{
+    height:100px;
+    width:100px;
+}
+
+.collapse{
+    margin-bottom:20px;
+}
+.gif-container{
+    width:100%;
+}
+#spark-gif{
+    width:100%;
+    height: 400px;
+}
+.countdown-timer{
+    color:white;
+    margin-top: 30px;
+}
+.countdown-timer{
+    font-size:3vw;
+    font-weight:700;
+}
+.colon{
+    color:#2F7BC7;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.times{
+    font-size: 10px;
+    color:#2F7BC7;
+    text-align: center;
+}
+
+.time-value{
+    text-align: center;
+}
+.ihack-button{
+    font-size: clamp(30px,1vw,200px);
+    text-decoration: none;
+    background-color:#5AC1F8;
+    border-radius:15px;
+    cursor: pointer;
+    padding:0px 20px;
+    color:white;
+    font-weight: 500;
+}
+.ihack-button:active{
+    text-decoration:none;
+}
+.ihack-button:hover{
+    color:#01213c;
+    background-color:#39b5f7;
+}
+
+
+body{
+    background: linear-gradient(90deg, #01213c 29px, transparent 1%) center, linear-gradient(#01213c 29px, transparent 1%) center, #183852;
+    background-size: 32px 32px;
+    margin: 0;
+    width:100vw;
+    height:100vh;
+}
+
+@media (max-width: 600px){
+    .countdown-timer{
+        font-size:100px !important;
+    }
+    
+}
