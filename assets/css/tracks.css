@@ -27,6 +27,7 @@
     color:black;
     font-weight: 700;
     position: relative;
+    text-align:center;
     top:-50px;
 }
 .track-card-footer{

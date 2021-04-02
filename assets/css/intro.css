@@ -39,6 +39,7 @@
   color: #55bef6;
   font-size:1rem;
   text-align: justify;
+  margin-bottom:20px;
 }
 .intro-wrapper{
   padding-top:130px;
@@ -89,10 +90,12 @@
 }
 .intro-content{
   margin-top: 50px;
+  
 }
 .intro-content h1{
   color: #55bef6;
-  font-size:3rem;
+  font-size:3.5rem;
+  font-weight: 700;
 }
 .intro-content h3{
   font-size:2rem;
@@ -175,7 +178,6 @@
     padding-right:7vw;
   }
   .ihack-behind{
-   
   }
   .ihack-behind span{
     font-size: 6rem;

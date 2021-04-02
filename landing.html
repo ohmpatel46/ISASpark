@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-body">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html#aboutus">About</a>
+                        <a class="nav-link active" href="./index.html#aboutus">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html#prizes">Prizes</a>
@@ -59,12 +59,18 @@
     <div class="countdown-timer d-flex justify-content-center">
         <div id="demo" class="d-flex"></div>
     </div>
-    <!-- <div class="ihack d-flex justify-content-center">
-        <a class="ihack-button">Continue to IHack</a>
-    </div> -->
+
 
     <script>
-        // Set the date we're counting down to
+        $(".nav-link").click(function() {
+        event.preventDefault();
+        var y=$(this).attr("href");
+        var x=$(y).offset().top - 100;
+        $([document.documentElement, document.body]).animate({
+            scrollTop:x 
+        }, 200);
+        });
+
         var countDownDate = new Date("May 5, 2021 15:37:25").getTime();
 
         // Update the count down every 1 second

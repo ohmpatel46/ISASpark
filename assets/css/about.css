@@ -35,9 +35,9 @@ body {
 .aboutus-content {
   margin-top: 40px;
   color: white;
-  font-size: 0.9rem;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  font-size: 1.2rem;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 .aboutus-content p{
   text-align: justify;
