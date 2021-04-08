@@ -73,10 +73,16 @@
     top: -50px;
 }
 .carousel-control-prev{
-    left:-5vw;
+    left:0vw;
+    top: 35vh;
+    height: 32px;
+    width:32px;
 }
 .carousel-control-next{
-    left:78vw;
+    left:84vw;
+    top: 35vh;
+    height: 32px;
+    width:32px;
 }
 @media (max-width: 600px) {
     .speakers-bg{
@@ -129,7 +135,7 @@
         color: #2A4F70;
         font-weight:700;
         position: relative;
-        top:-30vh;
+        top:-25vh;
         left:16vw;
         width:fit-content;
     }
@@ -142,10 +148,16 @@
         top: 50px;
     }
     .carousel-control-prev{
-        left:-10vw;
+        left:-7vw;
+        top:10vh;
+        height: 32px;
+        width:32px;
     }
     .carousel-control-next{
         left:80vw;
+        top:10vh;
+        height: 32px;
+        width:32px;
     }
     
 }

@@ -1080,6 +1080,7 @@
     };
 
     function contactUsHandler() {
+      event.preventDefault();
       var msg = "Query related to SPARK/iHack";
       var message = $("#Message-input").val();
       if (validateemail() && validatename()) {
