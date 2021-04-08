@@ -2,10 +2,34 @@
   margin-bottom:100px;
 }
 body {
-  background-color: #01213c;
+  background: linear-gradient(90deg, #01213c 29px, transparent 1%) center, linear-gradient(#01213c 29px, transparent 1%) center, #183852;
+  /* background-color: #01213c; */
+  background-size: 31px 31px;
   color: white;
   overflow-x: hidden  !important;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #2A5071 0px,#2A5071 81px,#01213c 81px,#01213c 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6E95B2;
+  height:120px;
+  border-radius:10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 
 .banner-behind {
@@ -18,14 +42,14 @@ body {
   padding-top: 4px;
   padding-left: 4px;
   height: 6vh;
-  width: clamp(150px, 12vw, 300px);
+  width: clamp(170px, 12vw, 250px);
   
 }
 .banner-front {
   background-color: #5ac1f8;
   color: #00223e;
   height: 6vh;
-  width: clamp(150px, 12vw, 300px);
+  width: clamp(170px, 12vw, 250px);
   text-align: center;
   padding-top: 2px;
 }
@@ -68,9 +92,10 @@ body {
     margin-bottom: 50px;
     padding: 0;
   }
-  .banner-behind{
-    
+  ::-webkit-scrollbar-track {
+    background: #01213c;
   }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */

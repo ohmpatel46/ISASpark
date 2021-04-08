@@ -7,22 +7,19 @@
 .track-card-wrap{   
     padding:20px 3vw;
     padding-bottom: 0px;
-    
 }
 .track-card{
     background-color:#CCE5FB;
     height:400px;
     border-radius: 10%;
     overflow:hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    /* -webkit-mask-image: -webkit-radial-gradient(white, black); */
 }
 .track-card-content{
     padding: 20px 0px;
     
 }
-.track-card-content img{
-    
-}
+
 .track-card-heading h3{
     color:black;
     font-weight: 700;
@@ -31,9 +28,7 @@
     top:-50px;
 }
 .track-card-footer{
-    
     border-radius: 10%;
-    
 }
 .track-footer{
     background-color:#2B4459;
@@ -53,7 +48,7 @@
     margin:15px 0;
     height:36px;
     width:46px;
-    -webkit-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.4s;
 }
 
 .disappear{
@@ -66,7 +61,7 @@
     transform: rotate(180deg);
 }
 .track-desc{
-    font-size:1.5rem;
+    font-size:1.3rem;
     padding: 10px 10px;
     text-align: center;
 }
@@ -82,24 +77,31 @@
         -webkit-transition-duration: 0.2s;
     }
     .track-card{
-        height:200px; 
+        height:250px; 
     }
     .track-card-content img{
         height:70px;
         width:70px;
     }
+    .track-card-heading{
+        padding: 0px 10px;
+    }
     .track-card-heading h3{
         position: relative;
+        font-size: 1.2rem;
         top:-20px;
     }
     .track-desc{
-        font-size:0.75rem;
+        font-size:0.70rem;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
     .track-card{
-        height:350px; 
+        height:400px; 
+    }
+    .track-desc{
+        font-size:1rem;
     }
 }
 
@@ -108,10 +110,20 @@
     .track-card{
         height:350px; 
     }
+    .track-footer{
+        border-top-left-radius:0%;
+        border-top-right-radius: 0%;
+    }
+    .track-desc{
+        font-size:1.0rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1300px) {
+    .track-desc{
+        font-size:1.2rem;
+    }
 }
 
 @media (min-width: 1300px) and (max-width: 1367px) {

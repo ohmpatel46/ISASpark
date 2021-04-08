@@ -1,10 +1,4 @@
 
-.speakers-content{
-    margin-bottom:0px;
-    margin-top: 20px;
-    padding-top: 50px;
-    margin-left: -2vw;
-}
 
 .speakers-bg{
     height: 40vw;
@@ -68,13 +62,26 @@
     left:20vw;
     top:-49vh;
 }
+#speaker-carousel{
+    margin-top:100px;
+    margin-bottom:30px;
+    margin-left:2vw;
+    margin-right:2vw;
+}
+.carousel-indicators{
+    position: relative;
+    top: -50px;
+}
+.carousel-control-prev{
+    left:-5vw;
+}
+.carousel-control-next{
+    left:78vw;
+}
 @media (max-width: 600px) {
     .speakers-bg{
         height: 45vw;
         width: 45vw;
-    }
-    .speakers-content .row{
-        margin-bottom:30px;
     }
     .speakers-img{
         height: 30vw;
@@ -122,7 +129,7 @@
         color: #2A4F70;
         font-weight:700;
         position: relative;
-        top:-33vh;
+        top:-30vh;
         left:16vw;
         width:fit-content;
     }
@@ -130,14 +137,22 @@
         left:2vw;
         
     }
+    .carousel-indicators{
+        position: relative;
+        top: 50px;
+    }
+    .carousel-control-prev{
+        left:-10vw;
+    }
+    .carousel-control-next{
+        left:80vw;
+    }
     
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
-    .speakers-content .row{
-        margin-bottom:30px;
-    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */

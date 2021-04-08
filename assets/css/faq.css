@@ -25,12 +25,31 @@
 .accordion-header button:active,.accordion-header button:focus{
   outline: none;
 }
-.expand-icon{
+.plus-minus{
   width:14px;
   height:14px;
-  float:right;
+  background-color:white;
+  border-radius: 50%;
+  margin:0;
+  display: inline-block;
+  float: right;
+}
+.horizontal-line{
+  height:2px;
+  width:10px;
+  background-color:black;
   position: relative;
-  bottom:-5px;
+  top:6px;
+  left:2px;
+}
+.vertical-line{
+  height:10px;
+  width:2px;
+  background-color:black;
+  position: relative;
+  top:0px;
+  left:6px;
+  
 }
 
 @media (max-width: 600px) {

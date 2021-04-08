@@ -1,14 +1,13 @@
 
 footer{
     margin-top:50px;
-    
 }
 .footer-content{
     width:100%;
     background-color:#2A5071;
     align-items:center;
     padding:10px 30px;
-    margin: 0;
+    margin: 0; 
 }
 #logo-mob{
     display:none;
@@ -37,9 +36,7 @@ footer{
     height:20px;
     
 }
-#phone{
-    
-}
+
 #github{
     width:30px;height:30px;
 }

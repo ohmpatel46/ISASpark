@@ -4,7 +4,9 @@
     z-index:99;
     
 }
-
+.navbar-body{
+    margin-top:7px;
+}
 .navbar-brand img{
     width:55px;
     height: 55px;
@@ -16,6 +18,7 @@
     margin-left: 2vw;
     padding-bottom: 7px;
     border-bottom:5px solid transparent;
+    transition: border-bottom 0.2s ease;
 }
 .nav-item:hover{
     border-bottom:5px solid #55BEF6;
@@ -43,12 +46,13 @@
     font-size:20px;
     padding:0px 10px !important;
     border:2px solid transparent;
-    transition: border-radius 0ms;
+    transition: border-radius 0ms !important;
+    transition: border 0.2s ease;
 }
 
 .nav-link:hover{
     border:2px solid #55BEF6;
-    border-radius:20px;   
+    border-radius:20px;  
 }
 
 
@@ -72,10 +76,13 @@
     .nav-item{
         display: flex;
         justify-content: center;
+        margin:0px;
+        border:none;
     }
     .nav-link{
         font-weight: 700;
         border-bottom:2px solid transparent;
+        text-decoration: none;
     }
 
     .navbar-toggler{
@@ -89,9 +96,11 @@
     .nav-link:active,.nav-link:hover{
         border:none;
         border-radius:0;   
+        border-bottom:2px solid transparent;
+        
     }
     .nav-item:hover{
-        border-bottom:none;
+        border:none;
         border-radius: 0px;
     }
     

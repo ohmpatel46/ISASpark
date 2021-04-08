@@ -1,39 +1,3 @@
-#devfolio-apply-now {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: #55bef6;
-  border-radius: 3px;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 22px;
-  font-weight: 600;
-  padding: 12px 20px;
-  text-align: center;
-  margin-top:30px;
-  margin-bottom:30px;
-  /* text-transform: lowercase; */
-}
-
-#devfolio-apply-now:not([disabled]) {
-  cursor: pointer;
-}
-
-#devfolio-apply-now:hover {
-  background-color: #2954bf !important;
-  transition: ease-in-out 0.1s;
-}
-
-
-.intro {
-  
-}
 
 .message {
   color: #55bef6;
@@ -94,11 +58,11 @@
 }
 .intro-content h1{
   color: #55bef6;
-  font-size:3.5rem;
+  font-size:5rem;
   font-weight: 700;
 }
 .intro-content h3{
-  font-size:2rem;
+  font-size:2.5rem;
 }
 .discord-button{
   background-color: #6F84D2;
@@ -156,20 +120,7 @@
   width:60px;
   height:60px;
 }
-#myBtn:hover {
-  
-}
-/* @media (min-width: 350px) and (max-width: 400px) {
-  .intro {
-    font-size: 8vw;
-  }
 
-  .intro-content .h3 {
-    font-size: 7vw;
-  }
-}
-@media (min-width: 400px) and (max-width: 450px) {
-} */
 
 @media (max-width: 600px) {
   .intro-wrapper{
@@ -193,8 +144,6 @@
     font-size:6rem;
   }
   .dates{
-    
-    
     margin-bottom: 40px;
   }
   .dates p{
@@ -204,15 +153,17 @@
     font-size: 1.7rem;
   }
   .intro-content h1{
-    font-size:2rem;
+    font-size:3.5rem;
     margin-right: auto;
+    margin-left: auto;
   }
   .intro-content h3 {
-    margin-top: -5px;
+    margin-top: 5px;
     margin-bottom: 15px;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight:100;
     margin-right: auto;
+    margin-left: auto;
   }
   .intro-content button{
     margin-left:0vw;
@@ -230,12 +181,16 @@
   .scrollbottom img{
     display:none;
   }
+  #myBtn {
+    right: 10px;
+    bottom: 10px;
+  }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
   .intro-content{
     display:flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
     flex-direction: column;
   }
