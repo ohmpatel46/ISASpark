@@ -19,13 +19,17 @@
     padding: 20px 0px;
     
 }
-
+.track-card-content img{
+    height:12vw;
+    width:12vw;
+    margin-bottom:10px;
+}
 .track-card-heading h3{
     color:black;
     font-weight: 700;
     position: relative;
     text-align:center;
-    top:-50px;
+    top:-20px;
 }
 .track-card-footer{
     border-radius: 10%;
@@ -80,19 +84,19 @@
         height:250px; 
     }
     .track-card-content img{
-        height:70px;
-        width:70px;
+        height:100px;
+        width:100px;
     }
     .track-card-heading{
         padding: 0px 10px;
     }
     .track-card-heading h3{
         position: relative;
-        font-size: 1.2rem;
+        font-size: 1rem;
         top:-20px;
     }
     .track-desc{
-        font-size:0.70rem;
+        font-size:0.65rem;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -103,6 +107,14 @@
     .track-desc{
         font-size:1rem;
     }
+    .track-card-content img{
+        height:150px;
+        width:150px;
+    }
+    .track-card-heading h3{
+        position: relative;
+        top:-10px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -110,12 +122,16 @@
     .track-card{
         height:350px; 
     }
-    .track-footer{
-        border-top-left-radius:0%;
-        border-top-right-radius: 0%;
-    }
     .track-desc{
         font-size:1.0rem;
+    }
+    .track-card-content img{
+        height:120px;
+        width:120px;
+    }
+    .track-card-heading h3{
+        position: relative;
+        top:-10px;
     }
 }
 
@@ -124,9 +140,21 @@
     .track-desc{
         font-size:1.2rem;
     }
+    .track-card-content img{
+        height:150px;
+        width:150px;
+    }
+    .track-card-heading h3{
+        position: relative;
+        top:-25px;
+    }
 }
 
 @media (min-width: 1300px) and (max-width: 1367px) {
+    .track-card-heading h3{
+        position: relative;
+        top:-15px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
