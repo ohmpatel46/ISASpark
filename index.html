@@ -899,13 +899,6 @@
   <script>
 
     AOS.init();
-
-    var footoffset = $(document).height() - $(".footer-content").height() + 1000;
-    var footoffsetmob = $(document).height() - $(".footer-content").height() - 200;
-
-
-
-
     $(".nav-link").click(function () {
       event.preventDefault();
       var y = $(this).attr("href");
@@ -979,10 +972,10 @@
       }
     }
 
-
-    $(document).scroll(function () {
+    var footoffset = $(document).height() - $(".footer-content").height() -700; // works when hosted
+    var footoffsetmob = $(document).height() - $(".footer-content").height() - 200;
+    $(window).scroll(function () {
       var $nav = $(".navbar");
-
       $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
       if ($(this).scrollTop() > footoffset) {
         $("#scroll-top-img").css("display", "none");
